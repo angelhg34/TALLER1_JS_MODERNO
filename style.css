@@ -2,7 +2,7 @@
     width: 50%;
 }
 .center{
-    margin-top:220px;
+    margin-top:115px;
 }
 body{
     background-color: rgb(152, 206, 206);
@@ -14,3 +14,24 @@ body{
     border: 3px solid rgb(26, 163, 152);
     border-radius:10px ;
 }
+h3{
+    font-family: monospace;
+    margin-top: 2.5em;
+    font-size: 24px;
+    font-weight: bold;
+    overflow: hidden; /* Esto es importante para que las letras aparezcan una por una */
+    white-space: nowrap; /* Evita el salto de línea */
+    border-right: 2px solid #333; /* Simula el cursor de escritura */
+    animation: aparecer 8s infinite alternate steps(40); /* Animación de aparición letra por letra */
+}
+
+
+@keyframes aparecer{
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
